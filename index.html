@@ -5,16 +5,19 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>MD Jubair Pantho</title>
 <meta name="description" content="MD Jubair Pantho — Ph.D. student in Data Science and Engineering at UT Knoxville. Machine learning, biostatistics, and radioactive drug design for cancer treatment.">
+<meta name="theme-color" content="#fbf9f5" media="(prefers-color-scheme: light)">
+<meta name="theme-color" content="#141311" media="(prefers-color-scheme: dark)">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Source+Serif+4:wght@400;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
 <link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js");</script>
 </head>
 <body>
 
-<header class="site-header">
+<header class="site-header" id="siteHeader">
   <div class="wrap header-inner">
-    <a class="brand" href="#top">MJ Pantho</a>
+    <a class="brand" href="#top"><span class="brand-mark">MJ</span> Pantho</a>
     <button class="nav-toggle" id="navToggle" aria-label="Toggle menu" aria-expanded="false">
       <span></span><span></span><span></span>
     </button>
@@ -34,252 +37,331 @@
 <main>
 
   <section id="top" class="hero">
-    <div class="wrap">
-      <p class="eyebrow">Ph.D. Student, Data Science and Engineering</p>
-      <h1>MD Jubair Pantho</h1>
-      <p class="hero-sub">University of Tennessee, Knoxville</p>
-      <p class="hero-tagline">I work at the intersection of machine learning, biostatistics, and health data — currently applying ML to the design and improvement of radioactive drugs for cancer treatment.</p>
-      <div class="hero-links">
-        <a class="btn btn-primary" href="mailto:jubairpantho1@gmail.com">Email me</a>
-        <a class="btn" href="https://github.com/jubair231dd" target="_blank" rel="noopener">GitHub</a>
-        <a class="btn" href="CV.pdf" target="_blank" rel="noopener">View CV (PDF)</a>
+    <div class="wrap hero-grid">
+      <div class="hero-text">
+        <p class="status"><span class="status-dot"></span>Currently: ML for radioactive drug design</p>
+        <p class="eyebrow">Ph.D. Student, Data Science and Engineering</p>
+        <h1>MD Jubair <em>Pantho</em></h1>
+        <p class="hero-sub">University of Tennessee, Knoxville</p>
+        <p class="hero-tagline">I work at the intersection of machine learning, biostatistics, and health data — currently applying ML to the design and improvement of radioactive drugs for cancer treatment.</p>
+        <div class="hero-links">
+          <a class="btn btn-primary" href="mailto:jubairpantho1@gmail.com">Email me <span aria-hidden="true">→</span></a>
+          <a class="btn" href="https://github.com/jubair231dd" target="_blank" rel="noopener">GitHub</a>
+          <a class="btn" href="CV.pdf" target="_blank" rel="noopener">View CV (PDF)</a>
+        </div>
       </div>
+
+      <div class="hero-art" aria-hidden="true">
+        <svg viewBox="0 0 400 400" class="network">
+          <g class="edges">
+            <line x1="200" y1="200" x2="110" y2="110"/>
+            <line x1="200" y1="200" x2="300" y2="95"/>
+            <line x1="200" y1="200" x2="320" y2="240"/>
+            <line x1="200" y1="200" x2="150" y2="310"/>
+            <line x1="200" y1="200" x2="70" y2="215"/>
+            <line x1="110" y1="110" x2="190" y2="55"/>
+            <line x1="190" y1="55" x2="300" y2="95"/>
+            <line x1="300" y1="95" x2="350" y2="170"/>
+            <line x1="350" y1="170" x2="320" y2="240"/>
+            <line x1="320" y1="240" x2="265" y2="335"/>
+            <line x1="265" y1="335" x2="150" y2="310"/>
+            <line x1="150" y1="310" x2="70" y2="215"/>
+            <line x1="70" y1="215" x2="110" y2="110"/>
+            <line x1="110" y1="110" x2="45" y2="140"/>
+            <line x1="265" y1="335" x2="320" y2="360"/>
+          </g>
+          <g class="rings">
+            <circle cx="200" cy="200" r="150"/>
+            <circle cx="200" cy="200" r="95"/>
+          </g>
+          <g class="nodes">
+            <circle cx="110" cy="110" r="7"/>
+            <circle cx="300" cy="95" r="9"/>
+            <circle cx="320" cy="240" r="7"/>
+            <circle cx="150" cy="310" r="8"/>
+            <circle cx="70" cy="215" r="6"/>
+            <circle cx="190" cy="55" r="5"/>
+            <circle cx="350" cy="170" r="5"/>
+            <circle cx="265" cy="335" r="6"/>
+            <circle cx="45" cy="140" r="4"/>
+            <circle cx="320" cy="360" r="4"/>
+          </g>
+          <circle class="core-glow" cx="200" cy="200" r="34"/>
+          <circle class="core" cx="200" cy="200" r="16"/>
+        </svg>
+      </div>
+    </div>
+
+    <div class="wrap">
+      <dl class="facts">
+        <div><dt>Now</dt><dd>Ph.D., UT Knoxville</dd></div>
+        <div><dt>Previously</dt><dd>Harvard School of Dental Medicine</dd></div>
+        <div><dt>Publications</dt><dd>4 peer‑reviewed</dd></div>
+      </dl>
     </div>
   </section>
 
   <section id="about" class="section">
-    <div class="wrap">
-      <h2>About</h2>
-      <p>I'm pursuing a Ph.D. in <strong>Data Science and Engineering (DSE)</strong> at the University of Tennessee, Knoxville. My current research focuses on using machine learning to design and improve radioactive drugs for cancer treatment.</p>
-      <p>I previously worked as a Research Associate/Biostatistician at the <strong>Harvard School of Dental Medicine</strong>, where I provided quantitative and statistical support for clinical research on oral health outcomes and developed machine learning models to predict post‑operative dental pain trajectories from longitudinal clinical trial data.</p>
-      <p>I hold an M.S. in Computer Science (Data Science) from the University of Tennessee at Chattanooga, where my research focused on estimating the transmission fitness advantage of SARS‑CoV‑2 variants. Before that, I completed a B.S. in Civil Engineering at BUET, with a thesis on geospatial analysis of COVID‑19 spread using GIS and remote sensing.</p>
-      <p>Across these projects, my focus has stayed consistent: using data‑driven, statistically rigorous methods to answer questions that matter for public health.</p>
+    <div class="wrap section-grid">
+      <header class="section-head"><span class="section-num">01</span><h2>About</h2></header>
+      <div class="section-body prose reveal">
+        <p class="lead">I'm pursuing a Ph.D. in <strong>Data Science and Engineering (DSE)</strong> at the University of Tennessee, Knoxville. My current research focuses on using machine learning to design and improve radioactive drugs for cancer treatment.</p>
+        <p>I previously worked as a Research Associate/Biostatistician at the <strong>Harvard School of Dental Medicine</strong>, where I provided quantitative and statistical support for clinical research on oral health outcomes and developed machine learning models to predict post‑operative dental pain trajectories from longitudinal clinical trial data.</p>
+        <p>I hold an M.S. in Computer Science (Data Science) from the University of Tennessee at Chattanooga, where my research focused on estimating the transmission fitness advantage of SARS‑CoV‑2 variants. Before that, I completed a B.S. in Civil Engineering at BUET, with a thesis on geospatial analysis of COVID‑19 spread using GIS and remote sensing.</p>
+        <blockquote>Across these projects, my focus has stayed consistent: using data‑driven, statistically rigorous methods to answer questions that matter for public health.</blockquote>
+      </div>
     </div>
   </section>
 
   <section id="experience" class="section alt">
-    <div class="wrap">
-      <h2>Research Experience</h2>
+    <div class="wrap section-grid">
+      <header class="section-head"><span class="section-num">02</span><h2>Research Experience</h2></header>
+      <div class="section-body timeline">
 
-      <article class="entry">
-        <div class="entry-head">
-          <div>
-            <h3>Research Associate / Biostatistician</h3>
-            <p class="entry-org">Harvard School of Dental Medicine, Boston, MA — Supervisor: Dr. Sung Eun Choi</p>
+        <article class="entry reveal">
+          <div class="entry-head">
+            <div>
+              <h3>Research Associate / Biostatistician</h3>
+              <p class="entry-org">Harvard School of Dental Medicine, Boston, MA — Supervisor: Dr. Sung Eun Choi</p>
+            </div>
+            <p class="entry-date">Dec. 2024 – Jun. 2026</p>
           </div>
-          <p class="entry-date">Dec. 2024 – Jun. 2026</p>
-        </div>
-        <ul>
-          <li>Provide quantitative and statistical support to a clinical research initiative on oral health outcomes, using de‑identified patient data to inform data‑driven health policy recommendations.</li>
-          <li>Developing a microsimulation model using NHANES data to simulate long‑term periodontal disease progression for disease burden estimation and resource planning.</li>
-          <li>Modeled post‑operative dental pain score trajectories from longitudinal clinical trial data, identifying latent subgroups to support personalized treatment pathways.</li>
-          <li>Developing ML and AI models to predict post‑operative pain group membership from patient‑specific health variables, aimed at identifying non‑resolving pain trajectories.</li>
-          <li>Conducted an 8‑year time‑trend analysis of oral cancer screening rates across demographic groups using NHANES survey data, uncovering disparities in preventive care access.</li>
-          <li>Co‑designed the educational presentation <em>"Interpreting and Understanding Data of AI Studies"</em> with Dr. Sung Eun Choi, to help clinicians better evaluate AI‑driven research.</li>
-        </ul>
-      </article>
+          <ul>
+            <li>Provide quantitative and statistical support to a clinical research initiative on oral health outcomes, using de‑identified patient data to inform data‑driven health policy recommendations.</li>
+            <li>Developing a microsimulation model using NHANES data to simulate long‑term periodontal disease progression for disease burden estimation and resource planning.</li>
+            <li>Modeled post‑operative dental pain score trajectories from longitudinal clinical trial data, identifying latent subgroups to support personalized treatment pathways.</li>
+            <li>Developing ML and AI models to predict post‑operative pain group membership from patient‑specific health variables, aimed at identifying non‑resolving pain trajectories.</li>
+            <li>Conducted an 8‑year time‑trend analysis of oral cancer screening rates across demographic groups using NHANES survey data, uncovering disparities in preventive care access.</li>
+            <li>Co‑designed the educational presentation <em>"Interpreting and Understanding Data of AI Studies"</em> with Dr. Sung Eun Choi, to help clinicians better evaluate AI‑driven research.</li>
+          </ul>
+        </article>
 
-      <article class="entry">
-        <div class="entry-head">
-          <div>
-            <h3>Graduate Research Assistant</h3>
-            <p class="entry-org">The University of Tennessee at Chattanooga — Supervisor: Dr. Hong Qin</p>
+        <article class="entry reveal">
+          <div class="entry-head">
+            <div>
+              <h3>Graduate Research Assistant</h3>
+              <p class="entry-org">The University of Tennessee at Chattanooga — Supervisor: Dr. Hong Qin</p>
+            </div>
+            <p class="entry-date">Aug. 2022 – Aug. 2024</p>
           </div>
-          <p class="entry-date">Aug. 2022 – Aug. 2024</p>
-        </div>
-        <ul>
-          <li>Developed and applied the Differential Population Growth Rate (DPGR) method to improve estimation accuracy of viral transmission fitness in exponentially growing virus populations.</li>
-          <li>Led exploratory data analysis and cleaning of large‑scale SARS‑CoV‑2 genomic surveillance datasets for downstream statistical modeling.</li>
-          <li>Built and validated linear regression models, achieving a 30% reduction in bias from under‑reported genomic data.</li>
-          <li>Leveraged pre‑trained transformer models (BERT, DNABERT, Longformer) for sequence classification.</li>
-        </ul>
-      </article>
+          <ul>
+            <li>Developed and applied the Differential Population Growth Rate (DPGR) method to improve estimation accuracy of viral transmission fitness in exponentially growing virus populations.</li>
+            <li>Led exploratory data analysis and cleaning of large‑scale SARS‑CoV‑2 genomic surveillance datasets for downstream statistical modeling.</li>
+            <li>Built and validated linear regression models, achieving a 30% reduction in bias from under‑reported genomic data.</li>
+            <li>Leveraged pre‑trained transformer models (BERT, DNABERT, Longformer) for sequence classification.</li>
+          </ul>
+        </article>
+      </div>
     </div>
   </section>
 
   <section id="projects" class="section">
-    <div class="wrap">
-      <h2>Selected Research Projects</h2>
+    <div class="wrap section-grid">
+      <header class="section-head"><span class="section-num">03</span><h2>Selected Research Projects</h2></header>
+      <div class="section-body">
+        <div class="cards">
+          <article class="card reveal">
+            <p class="card-tag">Genomics</p>
+            <h3>Phylogenetic Tree: Agglomerative Clustering to Understand Omicron Sub‑lineage Evolution</h3>
+            <ul>
+              <li>Analyzed the evolution of co‑circulating SARS‑CoV‑2 variants to identify predominantly affected regions, using the neighbor‑joining algorithm to map Omicron sub‑variant fitness growth dynamics.</li>
+            </ul>
+          </article>
 
-      <article class="entry">
-        <h3>Phylogenetic Tree: Agglomerative Clustering to Understand Omicron Sub‑lineage Evolution</h3>
-        <ul>
-          <li>Analyzed the evolution of co‑circulating SARS‑CoV‑2 variants to identify predominantly affected regions, using the neighbor‑joining algorithm to map Omicron sub‑variant fitness growth dynamics.</li>
-        </ul>
-      </article>
+          <article class="card reveal">
+            <p class="card-tag">Statistics</p>
+            <h3>Unraveling the Factors Contributing to Variability in Health Insurance Charges in the US</h3>
+            <ul>
+              <li>Conducted EDA, hypothesis testing, and multiple linear regression on a US healthcare insurance dataset (1,338 records) to understand pricing determinants.</li>
+              <li>Found Age, BMI, and Smoking to be statistically significant predictors of premiums, supporting evidence‑based insurance pricing strategies.</li>
+            </ul>
+          </article>
 
-      <article class="entry">
-        <h3>Unraveling the Factors Contributing to Variability in Health Insurance Charges in the US</h3>
-        <ul>
-          <li>Conducted EDA, hypothesis testing, and multiple linear regression on a US healthcare insurance dataset (1,338 records) to understand pricing determinants.</li>
-          <li>Found Age, BMI, and Smoking to be statistically significant predictors of premiums, supporting evidence‑based insurance pricing strategies.</li>
-        </ul>
-      </article>
+          <article class="card reveal">
+            <p class="card-tag">Deep Learning</p>
+            <h3>Augmenting High‑Dimensional Gene Expression Data Using GANs</h3>
+            <ul>
+              <li>Used Generative Adversarial Networks to generate synthetic gene expression data, addressing sample size limitations in biological datasets.</li>
+              <li>Trained Random Forest and KNN classifiers on original, GAN‑augmented, and synthetic‑only datasets; applied PCA to assess similarity between real and generated data.</li>
+              <li>Achieved up to 70.4% (RF) and 63.9% (KNN) accuracy with combined data, versus 28.5% (RF) and 27.3% (KNN) with synthetic‑only data.</li>
+            </ul>
+          </article>
+        </div>
 
-      <article class="entry">
-        <h3>Augmenting High‑Dimensional Gene Expression Data Using GANs</h3>
-        <ul>
-          <li>Used Generative Adversarial Networks to generate synthetic gene expression data, addressing sample size limitations in biological datasets.</li>
-          <li>Trained Random Forest and KNN classifiers on original, GAN‑augmented, and synthetic‑only datasets; applied PCA to assess similarity between real and generated data.</li>
-          <li>Achieved up to 70.4% (RF) and 63.9% (KNN) accuracy with combined data, versus 28.5% (RF) and 27.3% (KNN) with synthetic‑only data.</li>
-        </ul>
-      </article>
+        <h3 class="sub-heading">Works in Progress</h3>
 
-      <h3 class="sub-heading">Works in Progress</h3>
+        <div class="cards">
+          <article class="card card-wip reveal">
+            <p class="card-tag"><span class="pulse"></span>In progress</p>
+            <h3>Evaluating the Impact of Medicaid Unwinding on Children's Oral Health Access in the United States</h3>
+            <p>Investigating the effects of post‑2023 Medicaid disenrollment on children's access to dental care using nationally representative survey data. Integrating state‑level disenrollment rates with individual‑level health and demographic variables, and applying survey‑weighted logistic regression models to identify disparities in preventive dental care utilization among children.</p>
+          </article>
 
-      <article class="entry">
-        <h3>Evaluating the Impact of Medicaid Unwinding on Children's Oral Health Access in the United States</h3>
-        <p>Investigating the effects of post‑2023 Medicaid disenrollment on children's access to dental care using nationally representative survey data. Integrating state‑level disenrollment rates with individual‑level health and demographic variables, and applying survey‑weighted logistic regression models to identify disparities in preventive dental care utilization among children.</p>
-      </article>
-
-      <article class="entry">
-        <h3>Modeling Post‑Operative Dental Pain Trajectories and Predicting Non‑Resolving Pain Using ML and AI</h3>
-        <p>Modeling post‑operative dental pain score trajectories from longitudinal clinical trial data (H‑CREDENT study) using a Latent Class Mixture Model (LCMM) to identify distinct pain trajectory subgroups. Developing ML and deep learning models — Random Forest, CatBoost, Ensemble Learning, and gradient boosting — to predict non‑resolving pain group membership. Also built an automated data quality monitoring workflow for large‑scale survey data.</p>
-      </article>
+          <article class="card card-wip reveal">
+            <p class="card-tag"><span class="pulse"></span>In progress</p>
+            <h3>Modeling Post‑Operative Dental Pain Trajectories and Predicting Non‑Resolving Pain Using ML and AI</h3>
+            <p>Modeling post‑operative dental pain score trajectories from longitudinal clinical trial data (H‑CREDENT study) using a Latent Class Mixture Model (LCMM) to identify distinct pain trajectory subgroups. Developing ML and deep learning models — Random Forest, CatBoost, Ensemble Learning, and gradient boosting — to predict non‑resolving pain group membership. Also built an automated data quality monitoring workflow for large‑scale survey data.</p>
+          </article>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="publications" class="section alt">
-    <div class="wrap">
-      <h2>Publications</h2>
-      <ul class="pub-list">
-        <li>Pantho, M. J., Annan, R., Bauder, L. A., Huang, S., Qingge, L., and Qin, H. "A data‑driven sliding‑window pairwise comparative approach for the estimation of transmission fitness of SARS‑CoV‑2 variants and construction of the evolution fitness landscape," <em>Quantitative Biology</em> 13, no. 4 (2025). <a href="https://doi.org/10.1002/qub2.70003" target="_blank" rel="noopener">DOI: 10.1002/qub2.70003</a></li>
-        <li>Annan, R., Nkonu, U., Hatami, P., Pantho, M. J., Qingge, L., &amp; Qin, H. (2025). Predicting Variant Fitness of SARS‑COV‑2 from Full Viral Genome Sequences. <em>Proceedings of the AAAI Symposium Series</em>, 7(1), 428–437. <a href="https://doi.org/10.1609/aaaiss.v7i1.36915" target="_blank" rel="noopener">DOI: 10.1609/aaaiss.v7i1.36915</a></li>
-        <li>J. M. I. Uddin, M. J. Pantho and H. Qin, "Quantifying Influenza Strain Dominance: A Differential Population Growth Rate Analysis Across Regions and Seasons," <em>2025 IEEE International Conference on Data Mining Workshops (ICDMW)</em>, Washington, DC, USA, 2025, pp. 1–10. <a href="https://doi.org/10.1109/ICDMW69685.2025.00006" target="_blank" rel="noopener">DOI: 10.1109/ICDMW69685.2025.00006</a></li>
-        <li>Pantho, M. J., Ishmam, Z. S., Hafiz, A. M. I., &amp; Rahman, M. M. "NDVI: Detection of Vegetation Change Using Remote Sensing and GIS – a Study on Barishal City Corporation, Bangladesh," <em>Proceedings of the 6th International Conference on Civil Engineering for Sustainable Development (ICCESD 2022)</em>.</li>
-      </ul>
+    <div class="wrap section-grid">
+      <header class="section-head"><span class="section-num">04</span><h2>Publications</h2></header>
+      <div class="section-body">
+        <ol class="pub-list numbered">
+          <li class="reveal">Pantho, M. J., Annan, R., Bauder, L. A., Huang, S., Qingge, L., and Qin, H. "A data‑driven sliding‑window pairwise comparative approach for the estimation of transmission fitness of SARS‑CoV‑2 variants and construction of the evolution fitness landscape," <em>Quantitative Biology</em> 13, no. 4 (2025). <a class="doi" href="https://doi.org/10.1002/qub2.70003" target="_blank" rel="noopener">DOI: 10.1002/qub2.70003</a></li>
+          <li class="reveal">Annan, R., Nkonu, U., Hatami, P., Pantho, M. J., Qingge, L., &amp; Qin, H. (2025). Predicting Variant Fitness of SARS‑COV‑2 from Full Viral Genome Sequences. <em>Proceedings of the AAAI Symposium Series</em>, 7(1), 428–437. <a class="doi" href="https://doi.org/10.1609/aaaiss.v7i1.36915" target="_blank" rel="noopener">DOI: 10.1609/aaaiss.v7i1.36915</a></li>
+          <li class="reveal">J. M. I. Uddin, M. J. Pantho and H. Qin, "Quantifying Influenza Strain Dominance: A Differential Population Growth Rate Analysis Across Regions and Seasons," <em>2025 IEEE International Conference on Data Mining Workshops (ICDMW)</em>, Washington, DC, USA, 2025, pp. 1–10. <a class="doi" href="https://doi.org/10.1109/ICDMW69685.2025.00006" target="_blank" rel="noopener">DOI: 10.1109/ICDMW69685.2025.00006</a></li>
+          <li class="reveal">Pantho, M. J., Ishmam, Z. S., Hafiz, A. M. I., &amp; Rahman, M. M. "NDVI: Detection of Vegetation Change Using Remote Sensing and GIS – a Study on Barishal City Corporation, Bangladesh," <em>Proceedings of the 6th International Conference on Civil Engineering for Sustainable Development (ICCESD 2022)</em>.</li>
+        </ol>
 
-      <h3 class="sub-heading">Other Scholarly Contributions</h3>
-      <ul class="pub-list">
-        <li>Choi SE, Simon L. "Projected Outcomes of Removing Fluoride From US Public Water Systems." <em>JAMA Health Forum</em>. 2025. <a href="https://doi.org/10.1001/jamahealthforum.2025.1166" target="_blank" rel="noopener">DOI: 10.1001/jamahealthforum.2025.1166</a><br><span class="muted">Role: Technical Contributor — sensitivity analysis of the microsimulation model implementation using NHANES data; acknowledged in the additional contributions section.</span></li>
-      </ul>
+        <h3 class="sub-heading">Other Scholarly Contributions</h3>
+        <ul class="pub-list">
+          <li class="reveal">Choi SE, Simon L. "Projected Outcomes of Removing Fluoride From US Public Water Systems." <em>JAMA Health Forum</em>. 2025. <a class="doi" href="https://doi.org/10.1001/jamahealthforum.2025.1166" target="_blank" rel="noopener">DOI: 10.1001/jamahealthforum.2025.1166</a><span class="role"><strong>Role:</strong> Technical Contributor — sensitivity analysis of the microsimulation model implementation using NHANES data; acknowledged in the additional contributions section.</span></li>
+        </ul>
 
-      <h3 class="sub-heading">Conference Presentations</h3>
-      <p><em>"Differential Population Growth Fitness: A Pairwise Comparative Approach to Estimate the Fitness Advantage of Major SARS‑CoV‑2 Clades"</em>, presented at:</p>
-      <ul class="pub-list">
-        <li>MCBIOS 2023 Conference on Big Data and Artificial Intelligence for Genomics and Therapeutics, March 15–17, 2023, University of Dallas, Texas.</li>
-        <li>National Science Foundation (NSF) Regional I‑Corps Program, October 2023, University of Tennessee – Knoxville.</li>
-      </ul>
+        <h3 class="sub-heading">Conference Presentations</h3>
+        <div class="talk reveal">
+          <p class="talk-title"><em>"Differential Population Growth Fitness: A Pairwise Comparative Approach to Estimate the Fitness Advantage of Major SARS‑CoV‑2 Clades"</em>, presented at:</p>
+          <ul>
+            <li>MCBIOS 2023 Conference on Big Data and Artificial Intelligence for Genomics and Therapeutics, March 15–17, 2023, University of Dallas, Texas.</li>
+            <li>National Science Foundation (NSF) Regional I‑Corps Program, October 2023, University of Tennessee – Knoxville.</li>
+          </ul>
+        </div>
+      </div>
     </div>
   </section>
 
   <section id="teaching" class="section">
-    <div class="wrap">
-      <h2>Teaching &amp; Mentoring</h2>
+    <div class="wrap section-grid">
+      <header class="section-head"><span class="section-num">05</span><h2>Teaching &amp; Mentoring</h2></header>
+      <div class="section-body">
+        <div class="timeline">
+          <article class="entry reveal">
+            <div class="entry-head">
+              <div>
+                <h3>Graduate Teaching Assistant</h3>
+                <p class="entry-org">The University of Tennessee at Chattanooga</p>
+              </div>
+              <p class="entry-date">Aug. 2023 – Apr. 2024</p>
+            </div>
+            <ul>
+              <li>Assisted in courses including Fundamentals of Computer Science, Data Structure and Program Design, and Introduction to Machine Learning.</li>
+              <li>Graded assignments and exams, provided technical assistance, and guided students in coursework and projects.</li>
+              <li>Delivered one‑on‑one support to strengthen students' programming and problem‑solving skills.</li>
+            </ul>
+          </article>
 
-      <article class="entry">
-        <div class="entry-head">
-          <div>
-            <h3>Graduate Teaching Assistant</h3>
-            <p class="entry-org">The University of Tennessee at Chattanooga</p>
-          </div>
-          <p class="entry-date">Aug. 2023 – Apr. 2024</p>
+          <article class="entry reveal">
+            <div class="entry-head">
+              <div>
+                <h3>Undergraduate Research Mentor</h3>
+                <p class="entry-org">NSF – Research Experience for Undergraduates (REU) Program</p>
+              </div>
+              <p class="entry-date">May 2023 – Aug. 2023</p>
+            </div>
+            <ul>
+              <li>Mentored an undergraduate student, providing research direction, initial technical training, and ongoing support.</li>
+              <li>Shared research materials, manuscripts, and code to facilitate learning and project progress.</li>
+              <li>Guided data analysis, data interpretation, and research methodology.</li>
+            </ul>
+          </article>
         </div>
-        <ul>
-          <li>Assisted in courses including Fundamentals of Computer Science, Data Structure and Program Design, and Introduction to Machine Learning.</li>
-          <li>Graded assignments and exams, provided technical assistance, and guided students in coursework and projects.</li>
-          <li>Delivered one‑on‑one support to strengthen students' programming and problem‑solving skills.</li>
-        </ul>
-      </article>
 
-      <article class="entry">
-        <div class="entry-head">
-          <div>
-            <h3>Undergraduate Research Mentor</h3>
-            <p class="entry-org">NSF – Research Experience for Undergraduates (REU) Program</p>
-          </div>
-          <p class="entry-date">May 2023 – Aug. 2023</p>
-        </div>
-        <ul>
-          <li>Mentored an undergraduate student, providing research direction, initial technical training, and ongoing support.</li>
-          <li>Shared research materials, manuscripts, and code to facilitate learning and project progress.</li>
-          <li>Guided data analysis, data interpretation, and research methodology.</li>
+        <h3 class="sub-heading">Awards &amp; Achievements</h3>
+        <ul class="awards">
+          <li class="reveal"><span class="award-name">Dean's Merit Scholarship</span><span class="award-meta">University of Tennessee at Chattanooga · Apr. 2022</span></li>
+          <li class="reveal"><span class="award-name">Dean's Graduate High GPA Merit Award</span><span class="award-meta">University of Tennessee at Chattanooga · Apr. 2023</span></li>
+          <li class="reveal"><span class="award-name">Chattanooga Engineers Club Annual Scholarship</span><span class="award-meta">University of Tennessee at Chattanooga · Apr. 2024</span></li>
         </ul>
-      </article>
-
-      <h3 class="sub-heading">Awards &amp; Achievements</h3>
-      <ul class="pub-list">
-        <li>Dean's Merit Scholarship, University of Tennessee at Chattanooga — Apr. 2022</li>
-        <li>Dean's Graduate High GPA Merit Award, University of Tennessee at Chattanooga — Apr. 2023</li>
-        <li>Chattanooga Engineers Club Annual Scholarship, University of Tennessee at Chattanooga — Apr. 2024</li>
-      </ul>
+      </div>
     </div>
   </section>
 
   <section id="skills" class="section alt">
-    <div class="wrap">
-      <h2>Technical Skills</h2>
-      <div class="skills-grid">
-        <div class="skill-group">
+    <div class="wrap section-grid">
+      <header class="section-head"><span class="section-num">06</span><h2>Technical Skills</h2></header>
+      <div class="section-body skills">
+        <div class="skill-group reveal">
           <h4>Programming</h4>
-          <p>Python, R, SQL</p>
+          <ul class="chips"><li>Python</li><li>R</li><li>SQL</li></ul>
         </div>
-        <div class="skill-group">
+        <div class="skill-group reveal">
           <h4>Python Libraries &amp; Frameworks</h4>
-          <p>HuggingFace, PyTorch, TensorFlow, Scikit‑learn, Pandas, NumPy, Matplotlib, Seaborn</p>
+          <ul class="chips"><li>HuggingFace</li><li>PyTorch</li><li>TensorFlow</li><li>Scikit‑learn</li><li>Pandas</li><li>NumPy</li><li>Matplotlib</li><li>Seaborn</li></ul>
         </div>
-        <div class="skill-group">
+        <div class="skill-group reveal">
           <h4>Machine Learning</h4>
-          <p>Classification (Random Forest, KNN, SVM), Regression, PCA, K‑Means Clustering, Deep Learning (ANN, CNN, MLP, RNN, LSTM, GAN, Autoencoder, VAE, BERT, Transformers)</p>
+          <ul class="chips"><li>Random Forest</li><li>KNN</li><li>SVM</li><li>Regression</li><li>PCA</li><li>K‑Means Clustering</li></ul>
+          <p class="chips-label">Deep Learning</p>
+          <ul class="chips"><li>ANN</li><li>CNN</li><li>MLP</li><li>RNN</li><li>LSTM</li><li>GAN</li><li>Autoencoder</li><li>VAE</li><li>BERT</li><li>Transformers</li></ul>
         </div>
-        <div class="skill-group">
+        <div class="skill-group reveal">
           <h4>Statistical Analysis</h4>
-          <p>ANOVA, Chi‑square Test, Hypothesis Testing, Linear &amp; Logistic Regression, T‑test, Survival Analysis</p>
+          <ul class="chips"><li>ANOVA</li><li>Chi‑square Test</li><li>Hypothesis Testing</li><li>Linear &amp; Logistic Regression</li><li>T‑test</li><li>Survival Analysis</li></ul>
         </div>
-        <div class="skill-group">
+        <div class="skill-group reveal">
           <h4>Tools &amp; Technologies</h4>
-          <p>Git, LaTeX, Linux, Tableau, REDCap</p>
+          <ul class="chips"><li>Git</li><li>LaTeX</li><li>Linux</li><li>Tableau</li><li>REDCap</li></ul>
         </div>
       </div>
     </div>
   </section>
 
   <section id="education" class="section">
-    <div class="wrap">
-      <h2>Education</h2>
+    <div class="wrap section-grid">
+      <header class="section-head"><span class="section-num">07</span><h2>Education</h2></header>
+      <div class="section-body timeline">
 
-      <article class="entry">
-        <div class="entry-head">
-          <div>
-            <h3>Ph.D. in Data Science and Engineering (DSE)</h3>
-            <p class="entry-org">University of Tennessee, Knoxville</p>
+        <article class="entry is-current reveal">
+          <div class="entry-head">
+            <div>
+              <h3>Ph.D. in Data Science and Engineering (DSE)</h3>
+              <p class="entry-org">University of Tennessee, Knoxville</p>
+            </div>
+            <p class="entry-date badge">In progress</p>
           </div>
-          <p class="entry-date">In progress</p>
-        </div>
-        <p>Research focus: applying machine learning to the design and improvement of radioactive drugs for cancer treatment.</p>
-      </article>
+          <p>Research focus: applying machine learning to the design and improvement of radioactive drugs for cancer treatment.</p>
+        </article>
 
-      <article class="entry">
-        <div class="entry-head">
-          <div>
-            <h3>M.S. in Computer Science (Data Science)</h3>
-            <p class="entry-org">University of Tennessee, Chattanooga</p>
+        <article class="entry reveal">
+          <div class="entry-head">
+            <div>
+              <h3>M.S. in Computer Science (Data Science)</h3>
+              <p class="entry-org">University of Tennessee, Chattanooga</p>
+            </div>
+            <p class="entry-date">Aug. 2024</p>
           </div>
-          <p class="entry-date">Aug. 2024</p>
-        </div>
-        <p>Project: <em>"Differential Population Growth Fitness: A Data Driven Pairwise Comparative Approach to Estimate the Fitness Advantage of Major SARS‑CoV‑2 Clades."</em> Supervisor: Dr. Hong Qin.</p>
-      </article>
+          <p>Project: <em>"Differential Population Growth Fitness: A Data Driven Pairwise Comparative Approach to Estimate the Fitness Advantage of Major SARS‑CoV‑2 Clades."</em> Supervisor: Dr. Hong Qin.</p>
+        </article>
 
-      <article class="entry">
-        <div class="entry-head">
-          <div>
-            <h3>B.S. in Civil Engineering</h3>
-            <p class="entry-org">Bangladesh University of Engineering and Technology (BUET), Dhaka</p>
+        <article class="entry reveal">
+          <div class="entry-head">
+            <div>
+              <h3>B.S. in Civil Engineering</h3>
+              <p class="entry-org">Bangladesh University of Engineering and Technology (BUET), Dhaka</p>
+            </div>
+            <p class="entry-date">Feb. 2021</p>
           </div>
-          <p class="entry-date">Feb. 2021</p>
-        </div>
-        <p>Thesis: <em>"Geospatial Spreading of COVID‑19 Cases Over Time and Relation with PM2.5 and Meteorological Parameters in Dhaka City."</em> Supervisor: Dr. Md. Mafizur Rahman.</p>
-      </article>
+          <p>Thesis: <em>"Geospatial Spreading of COVID‑19 Cases Over Time and Relation with PM2.5 and Meteorological Parameters in Dhaka City."</em> Supervisor: Dr. Md. Mafizur Rahman.</p>
+        </article>
+      </div>
     </div>
   </section>
 
-  <section id="contact" class="section alt">
-    <div class="wrap contact-wrap">
-      <h2>Get in Touch</h2>
-      <p>Based in Boston, MA. Feel free to reach out about research, collaboration, or opportunities.</p>
-      <div class="hero-links">
-        <a class="btn btn-primary" href="mailto:jubairpantho1@gmail.com">jubairpantho1@gmail.com</a>
-        <a class="btn" href="https://github.com/jubair231dd" target="_blank" rel="noopener">GitHub</a>
+  <section id="contact" class="section contact">
+    <div class="wrap">
+      <div class="contact-card reveal">
+        <p class="eyebrow">08 — Contact</p>
+        <h2>Get in Touch</h2>
+        <p>Based in Boston, MA. Feel free to reach out about research, collaboration, or opportunities.</p>
+        <div class="hero-links">
+          <a class="btn btn-primary" href="mailto:jubairpantho1@gmail.com">jubairpantho1@gmail.com</a>
+          <a class="btn" href="https://github.com/jubair231dd" target="_blank" rel="noopener">GitHub</a>
+        </div>
       </div>
     </div>
   </section>
@@ -287,8 +369,9 @@
 </main>
 
 <footer class="site-footer">
-  <div class="wrap">
-    <p>&copy; <span id="year"></span> MD Jubair Pantho. Built with HTML &amp; CSS, hosted on GitHub Pages.</p>
+  <div class="wrap footer-inner">
+    <p>&copy; <span id="year"></span> MD Jubair Pantho</p>
+    <p>Built with HTML &amp; CSS, hosted on GitHub Pages · <a href="#top">Back to top ↑</a></p>
   </div>
 </footer>
 
