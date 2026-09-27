@@ -21,6 +21,29 @@ const onScroll = () => siteHeader.classList.toggle("scrolled", window.scrollY > 
 window.addEventListener("scroll", onScroll, { passive: true });
 onScroll();
 
+// Enlarge research figures in a lightbox
+const lightbox = document.getElementById("lightbox");
+if (lightbox && typeof lightbox.showModal === "function") {
+  const lbImg = lightbox.querySelector("img");
+  const lbCap = lightbox.querySelector("figcaption");
+  document.querySelectorAll(".fig").forEach((fig) => {
+    fig.addEventListener("click", () => {
+      lbImg.src = fig.dataset.full;
+      lbImg.alt = fig.dataset.caption;
+      lbCap.textContent = fig.dataset.caption;
+      lightbox.showModal();
+    });
+  });
+  lightbox.querySelector(".lightbox-close").addEventListener("click", () => lightbox.close());
+  lightbox.addEventListener("click", (e) => {
+    if (e.target === lightbox) lightbox.close();
+  });
+} else {
+  document.querySelectorAll(".fig").forEach((fig) => {
+    fig.addEventListener("click", () => window.open(fig.dataset.full, "_blank"));
+  });
+}
+
 // Fade elements in as they enter the viewport
 const revealEls = document.querySelectorAll(".reveal");
 if ("IntersectionObserver" in window) {
